@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lists - Dashboard</title>
+    <link rel="stylesheet" href="lists-style.css">
+</head>
+<body class="dark-mode">
+    <header>
+        <h1>HTML Lists - SYED NIHAL ACADEMY</h1>
+        <nav>
+            <a href="index.html"> Home</a>
+        </nav>
+    </header>
+
+    <div class="nav-container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="text.html">Text Formatting</a></li>
+                <li><a href="lists.html" class="active">Lists</a></li>
+                <li><a href="tables.html">Tables</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <div class="container">
+            <h2>📌 Ordered List</h2>
+            <ol class="custom-list">
+                <li>Step 1: Understand the Basics</li>
+                <li>Step 2: Learn Formatting</li>
+                <li>Step 3: Practice with Examples</li>
+            </ol>
+           
+            <pre id="ordered-code">
+<code>
+&lt;ol class="custom-list"&gt;
+    &lt;li&gt;Step 1: Understand the Basics&lt;/li&gt;
+    &lt;li&gt;Step 2: Learn Formatting&lt;/li&gt;
+    &lt;li&gt;Step 3: Practice with Examples&lt;/li&gt;
+&lt;/ol&gt;
+</code>
+
+<button class="copy-btn" onclick="copyToClipboard('#ordered-code')">Copy Code</button>
+            </pre>
+        </div>
+
+        <div class="container">
+            <h2>✅ Unordered List</h2>
+            <ul class="custom-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+            
+            <pre id="unordered-code">
+<code>
+&lt;ul class="custom-list"&gt;
+    &lt;li&gt;HTML&lt;/li&gt;
+    &lt;li&gt;CSS&lt;/li&gt;
+    &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;
+</code>
+
+<button class="copy-btn" onclick="copyToClipboard('#unordered-code')">Copy Code</button>
+            </pre>
+        </div>
+
+        <div class="container">
+            <h2>📖 Description List</h2>
+            <dl class="custom-list">
+                <dt><b>Frontend</b></dt>
+                <dd>Technologies used for UI design.</dd>
+                <dt><b>Backend</b></dt>
+                <dd>Server-side operations and database management.</dd>
+            </dl>
+            
+            <pre id="description-code">
+<code>
+&lt;dl class="custom-list"&gt;
+    &lt;dt&gt;&lt;b&gt;Frontend&lt;/b&gt;&lt;/dt&gt;
+    &lt;dd&gt;Technologies used for UI design.&lt;/dd&gt;
+    &lt;dt&gt;&lt;b&gt;Backend&lt;/b&gt;&lt;/dt&gt;
+    &lt;dd&gt;Server-side operations and database management.&lt;/dd&gt;
+&lt;/dl&gt;
+</code>
+
+<button class="copy-btn" onclick="copyToClipboard('#description-code')">Copy Code</button>
+            </pre>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SYED NIHAL ACADEMY - HTML Basics</p>
+    </footer>
+
+    <script src="lists-script.js"></script>
+</body>
+</html>

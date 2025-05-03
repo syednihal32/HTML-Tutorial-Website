@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms - Dashboard</title>
+    <link rel="stylesheet" href="forms-style.css">
+</head>
+<body>
+    <header>
+        <h1>📝 HTML Forms - SYED NIHAL ACADEMY</h1>
+        <nav>
+            <a href="index.html">Go Back Home</a>
+        </nav>
+    </header>
+    <div class="nav-container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="text.html">Text Formatting</a></li>
+                <li><a href="lists.html">Lists</a></li>
+                <li><a href="tables.html">Tables</a></li>
+                <li><a href="forms.html"class="active">Forms</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <div class="container">
+            <h2>📌 User Registration Form</h2>
+            <form id="userForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+
+                <label for="country">Country:</label>
+                <select id="country">
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                    <option value="canada">Canada</option>
+                    <option value="india">India</option>
+                </select>
+
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+
+                <label>
+                    <input type="checkbox" id="terms"> Accept Terms & Conditions
+                </label>
+
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <div class="container">
+            <h2>💻 Example Code</h2>
+            <pre id="sample-code">
+&lt;form&gt;
+    &lt;label&gt;Full Name:&lt;/label&gt;
+    &lt;input type="text"&gt;
+
+    &lt;label&gt;Email:&lt;/label&gt;
+    &lt;input type="email"&gt;
+
+    &lt;label&gt;Password:&lt;/label&gt;
+    &lt;input type="password"&gt;
+
+    &lt;label&gt;Country:&lt;/label&gt;
+    &lt;select&gt;
+        &lt;option&gt;USA&lt;/option&gt;
+        &lt;option&gt;UK&lt;/option&gt;
+    &lt;/select&gt;
+
+    &lt;label&gt;Gender:&lt;/label&gt;
+    &lt;input type="radio"&gt; Male
+    &lt;input type="radio"&gt; Female
+
+    &lt;input type="checkbox"&gt; Accept Terms
+    &lt;button&gt;Register&lt;/button&gt;
+&lt;/form&gt;
+            </pre>
+            <button onclick="copyCode()">Copy Code</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 SYED NIHAL ACADEMY - HTML Basics</p>
+    </footer>
+    <script src="forms-script.js"></script>
+</body>
+</html>

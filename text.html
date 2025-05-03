@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Formatting - HTML Basics</title>
+    <link rel="stylesheet" href="text-style.css">
+</head>
+<body class="dark-mode">
+
+    <header>
+        <h1>Text Formatting in HTML SYED NIHAL ACADEMY - HTML Basics </h1>
+        
+        <!-- Theme Toggle Button -->
+        <div class="theme-toggle">
+            <span id="theme-icon">☀️</span>
+            <label class="switch">
+                <input type="checkbox" id="darkModeToggle">
+                <span class="slider"></span>
+            </label>
+            <span>🌙</span>
+        </div>
+    </header>
+
+    <div class="nav-container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="text.html"  class="active">Text Formatting</a></li>
+                <li><a href="lists.html" >Lists</a></li>
+                <li><a href="tables.html">Tables</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <section>
+            <h2>Let's Learn Basic Text Formatting</h2>
+
+        
+            <div class="container-wrapper">
+                <div class="container">
+                    <p>If you want the text to look like this </p>
+                    <p><b>Bold Text:</b> Use the <code>&lt;b&gt;</code> tag.</p>
+                </div>
+
+                <div class="container">
+                    <p>If you want the text to look like this </p>
+                    <p><i>Italic Text:</i> Use the <code>&lt;i&gt;</code> tag.</p>
+                </div>
+
+                <div class="container">
+                    <p>If you want the text to look like this </p>
+                    <p><u>Underlined Text:</u> Use the <code>&lt;u&gt;</code> tag.</p>
+                </div>
+
+                <div class="container">
+                    <p>If you want the text to look like this </p>
+                    <p><mark>Highlighted Text:</mark> Use the <code>&lt;mark&gt;</code> tag.</p>
+                </div>
+
+                <div class="container">
+                    <p>If you want the text to look like this </p>
+                    <p><small>Smaller Text:</small> Use the <code>&lt;small&gt;</code> tag.</p>
+                </div>
+
+                <div class="container">
+                    <p>If you want the text to look like this </p>
+                    <p><del>Strikethrough Text:</del> Use the <code>&lt;del&gt;</code> tag.</p>
+                </div>
+            </div>
+        </section>
+
+        <section1>
+            <div class ="container10">
+            <h2>Example Code</h2>
+            <pre id="sample-code">
+&lt;p&gt;&lt;b&gt;This is bold text&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;This is italic text&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;This is underlined text&lt;/u&gt;&lt;/p&gt;
+            </pre>
+            <button onclick="copyCode()">Copy Code</button>
+        </section1>
+        </div>
+    </main>
+
+    <script src="text-script.js"></script>
+
+</body>
+</html>

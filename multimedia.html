@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia in HTML</title>
+    <link rel="stylesheet" href="multimedia-style.css">
+   
+</head>
+<body>
+    <header>
+        <h1>Multimedia in HTML</h1>
+        <h3>Enhance your web pages with audio, video, and images</h3>
+    </header>
+
+    <div class="nav-container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="text.html">Text Formatting</a></li>
+                <li><a href="lists.html">Lists</a></li>
+                <li><a href="tables.html">Tables</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="multimedia.html" class="active">Multimedia</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section class="multimedia-container">
+            <h2>🎬 Adding Multimedia Elements in HTML</h2>
+            <p>HTML allows embedding of multimedia like images, audio, and video. Below are examples:</p>
+
+            <!-- Example Image -->
+            <h3>🖼️ Image Example</h3>
+            <img src="html css graphic.png" alt="Example Image">
+            
+            <!-- Example Audio -->
+            <h3>🎵 Audio Example</h3>
+            <audio controls>
+                <source src="emotional audio.mp3" type="audio/mpeg">
+                
+            </audio>
+
+            <!-- Example Video -->
+            <h3>📹 Video Example</h3>
+            <video controls>
+                <source src="km_20221105_1080p.mp4" type="video/mp4">
+                
+            </video>
+
+            <!-- Example YouTube Embed -->
+            <h3>📺 Embedded YouTube Video</h3>
+            <iframe src="https://www.youtube.com/embed/x4r7af2Lcmw?si=UobX-MQjGHAhRpEg" allowfullscreen></iframe>
+
+            <!-- Example Code with Copy Button -->
+            <h3>📝 Example Code</h3>
+            <div class="multimedia-container">
+                <h2>📷 Adding an Image in HTML</h2>
+                <img src="example-image.jpg" alt="Example Image">
+                
+                <div class="code-box">
+                    <pre><code>&lt;img src="example-image.jpg" alt="Example Image"&gt;</code></pre>
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                </div>
+            </div>
+            
+            <div class="multimedia-container">
+                <h2>🎵 Embedding an Audio File</h2>
+                <audio controls>
+                    <source src="example-audio.mp3" type="audio/mpeg">
+                    
+                </audio>
+                
+                <div class="code-box">
+                    <pre><code>&lt;audio controls&gt;
+                &lt;source src="example-audio.mp3" type="audio/mpeg"&gt;
+               
+            &lt;/audio&gt;</code></pre>
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                </div>
+            </div>
+            
+            <div class="multimedia-container">
+                <h2>📽️ Embedding a Video</h2>
+                <video controls>
+                    <source src="example-video.mp4" type="video/mp4">
+                    
+                </video>
+                
+                <div class="code-box">
+                    <pre><code>&lt;video controls&gt;
+                &lt;source src="example-video.mp4" type="video/mp4"&gt;
+               
+            &lt;/video&gt;</code></pre>
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                </div>
+            </div>
+            
+            <div class="multimedia-container">
+                <h2>🔗 Adding an External Link</h2>
+                <a href="https://www.youtube.com" target="www.youtube.com">Visit Example Website</a>
+                
+                <div class="code-box">
+                    <pre><code>&lt;a href="https://www.example.com" target="_blank"&gt;Visit Example Website&lt;/a&gt;</code></pre>
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <script defer src="script.js"></script>
+
+    <footer>
+        <p>&copy;  2025 SYED NIHAL ACADEMY - HTML Basics</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,268 @@
+/* Light & Dark Mode Colors */
+body.dark-mode {
+    background-color: #0d1117;
+    color: rgb(247, 247, 247);
+}
+
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+/* Smooth Transition */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Header */
+header {
+    background: #161b22;
+    color: cyan;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.2);
+    position: relative;
+}
+
+header h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Theme Toggle Button Styles */
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Toggle Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 3.5px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+/* Navigation Bar */
+.nav-container {
+    background: #0a0f1a;
+    padding: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    margin: 20px auto;
+    max-width: 95%;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: cyan;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover, nav ul li .active {
+    background: cyan;
+    color: #0a0f1a;
+}
+
+input:checked + .slider {
+    background-color: rgb(32, 37, 37);
+}
+
+input:checked + .slider:before {
+    transform: translateX(24px);
+}
+
+/* Main Content Layout */
+main {
+    text-align: left;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10%;
+    max-width: 80%;
+}
+
+.container {
+    background: #161b22;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px cyan;
+    max-width: 400px;
+    width: 50%;
+    text-align: left;
+    margin-bottom: 20px;
+    
+}
+.p7{
+    color: chartreuse;
+}
+.container h2 {
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+.container p, .container pre {
+    color: #e6edf3;
+    font-size: 20px;
+    line-height: 1.8;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+    background: cyan;
+    color: black;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #00cccc;
+}
+
+/* Footer */
+footer {
+    background: #161b22;
+    color: cyan;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0 -4px 10px rgba(0, 255, 255, 0.2);
+}
+.inline {
+    display: inline-block;
+    margin-right: 20px; /* Adds spacing between them */
+}
+/* Wrapper for 3-column layout */
+.container-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Each container takes 30% width */
+.container {
+    background: #161b22;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px cyan;
+    width: 30%;
+    text-align: center;
+}
+
+/* Unique colors for formatted text */
+.container b {
+    color: #ffcc00; /* Bold text - Yellow */
+}
+
+.container i {
+    color: #00ffcc; /* Italic text - Aqua */
+}
+
+.container u {
+    color: #ff66ff; /* Underlined text - Pink */
+}
+
+.container mark {
+    background-color: #ff0000;
+    color: white;
+    padding: 3px;
+    border-radius: 3px; /* Highlighted text - Red */
+}
+
+.container small {
+    color: #99ccff; /* Small text - Light Blue */
+}
+
+.container del {
+    color: #ff6666; /* Strikethrough text - Light Red */
+    text-decoration: line-through;
+}
+
+/* Make it responsive for smaller screens */
+@media (max-width: 900px) {
+    .container {
+        width: 45%; /* Two per row */
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%; /* Full width */
+    }
+}
+.container10{
+    background: #000000;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px cyan;
+    width: 70%;
+    text-align: center;
+    margin-left: 330px;
+
+}

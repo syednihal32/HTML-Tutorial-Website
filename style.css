@@ -1,0 +1,214 @@
+/* ------------------------- */
+/* style.css - Pro Coding Theme */
+/* ------------------------- */
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d1117; /* Dark coding background */
+    color: #e6edf3;
+}
+
+header {
+    background: #161b22; /* Dark header */
+    color: rgb(150, 225, 10);
+    padding: 20px;
+    text-align: center;
+}
+header h1{
+        background: #0a0f1a; /* Slightly darker background */
+        padding: 20px 0;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+        margin: 20px auto;
+        max-width: 95%;
+        text-align: center;
+}
+header h2 {
+    color: red; /* Set h2 text to red */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: cyan;
+    font-weight: bold;
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+    min-height: 80vh;
+    overflow-y: auto;
+}
+
+.attractive-section {
+    background: #000000;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px cyan;
+    text-align: center;
+    max-width: 16000px;
+    margin: 20px auto;
+}
+
+.attractive-section h2 {
+    color: cyan;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.attractive-section h3 {
+    color: #3ad8e6;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.attractive-section p {
+    color: #e6edf3;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.subscription-plans {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.plan {
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.free {
+    background: #161b22;
+    border: 2px solid cyan;
+    color: white;
+}
+
+.pro {
+    background: linear-gradient(135deg, #808080, #C0C0C0);
+    color: white;
+}
+
+.premium {
+    background: linear-gradient(135deg, #FFD700, #f9946f);
+    color: black;
+    font-weight: bold;
+}
+
+footer {
+    background: #161b22;
+    color: cyan;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+}
+
+header h1 {
+    font-family: 'Orbitron', sans-serif; /* Modern, futuristic font */
+    font-size: 32px;
+    font-weight: bold;
+    color: cyan;
+}
+
+.marquee-text marquee {
+    font-style:oblique;
+    font-weight: bold;
+    color: #ff4500;
+    font-size: 20px;
+}
+
+header p {
+    font-family: 'Courier New', Courier, monospace; /* Coding-style font */
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Navigation Bar Container */
+.nav-container {
+    background: #0a0f1a; /* Slightly darker background */
+    padding: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    margin: 20px auto;
+    max-width: 95%;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: cyan;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background: cyan;
+    color: #0a0f1a;
+}
+
+/* Multimedia Section */
+.multimedia-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    text-align: center;
+}
+
+.multimedia-container h2 {
+    color: cyan;
+}
+
+video, audio {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+iframe {
+    width: 100%;
+    height: 315px;
+    border-radius: 5px;
+}
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('html css graphic.png');
+    background-size: cover;
+    background-position: center;
+    color:greenyellow; /* Adjust text color */
+}
